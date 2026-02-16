@@ -1,0 +1,359 @@
+/* Container */
+.invoice-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #f3f7fe;
+  min-height: 100vh;
+}
+
+/* Header */
+.invoice-header {
+  text-align: center;
+  margin-bottom: 32px;
+  padding: 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.invoice-title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.invoice-title mat-icon {
+  font-size: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.invoice-subtitle {
+  margin: 8px 0 0;
+  font-size: 1rem;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+/* Cards */
+.section-card {
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+  background-color: white; /* All cards white */
+}
+
+.section-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.section-card mat-card-header {
+  padding: 16px 24px;
+  border-radius: 12px 12px 0 0;
+  margin: -16px -16px 16px -16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fa;
+}
+
+.section-card mat-card-title {
+  color: #2d3748;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.section-card mat-card-content {
+  padding: 24px;
+}
+
+/* Form Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* Table */
+.table-container {
+  overflow-x: auto;
+  margin-top: 16px;
+}
+
+.items-table {
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+
+.items-table th {
+  background: #f8f9fa;
+  color: #2d3748;
+  font-weight: 600;
+  padding: 16px 8px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.items-table td {
+  padding: 8px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.items-table tr:last-child td {
+  border-bottom: none;
+}
+
+.table-field {
+  width: 100%;
+  margin: 0;
+}
+
+.table-field .mat-mdc-form-field-subscript-wrapper {
+  display: none;
+}
+
+/* Add Item Button */
+.text-center .btn.btn-primary {
+  width: 200px; /* Increase button width */
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Summary Section */
+.summary-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.summary-section mat-card-content {
+  padding: 24px;
+}
+
+.summary-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.summary-label mat-icon {
+  font-size: 1.75rem;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.summary-value {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.action-buttons button {
+  padding: 0 32px;
+  height: 48px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.5);
+}
+
+.reset-btn {
+  background: white;
+  color: #718096;
+  border: 2px solid #e2e8f0;
+}
+
+.reset-btn:hover {
+  background: #f7fafc;
+  border-color: #cbd5e0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action-buttons {
+    flex-direction: column-reverse;
+  }
+
+  .action-buttons button {
+    width: 100%;
+  }
+
+  .summary-content {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .summary-value {
+    font-size: 1.75rem;
+  }
+
+  .text-center .btn.btn-primary {
+    width: 100%; /* Full width on mobile */
+  }
+}
+.mat-mdc-card-content,
+.mat-mdc-card-header {
+    background-color: white;
+}
+
+/* ================= ORDER SUMMARY / RECEIPT ================= */
+mat-card[ng-reflect-ng-if] {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.4s ease-out;
+  margin-bottom: 32px;
+}
+
+mat-card-header {
+  background: #667eea; /* gradient header */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px 12px 0 0;
+  padding: 16px 24px;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+mat-card-title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+mat-card-content {
+  padding: 24px;
+  background: #f9faff;
+  border-radius: 0 0 12px 12px;
+}
+
+/* Receipt Table */
+mat-card-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 0.95rem;
+}
+
+mat-card-content table th,
+mat-card-content table td {
+  padding: 10px 12px;
+  border: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+mat-card-content table th {
+  background-color: #f0f4ff;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+mat-card-content table tbody tr:nth-child(even) {
+  background-color: #f5f7fa;
+}
+
+mat-card-content table tbody tr:hover {
+  background-color: #e6ebff;
+  transition: 0.2s;
+}
+
+/* Summary Section inside receipt */
+mat-card-content p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+mat-card-content p strong {
+  color: #2d3748;
+}
+
+/* Grand total display */
+mat-card-content .text-end h5,
+mat-card-content .text-end h4 {
+  margin: 8px 0 0 0;
+  font-weight: 600;
+  color: #667eea;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  mat-card-content table,
+  mat-card-content table thead,
+  mat-card-content table tbody,
+  mat-card-content table th,
+  mat-card-content table td,
+  mat-card-content table tr {
+    display: block;
+  }
+
+  mat-card-content table thead {
+    display: none;
+  }
+
+  mat-card-content table tbody tr {
+    margin-bottom: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px;
+    background: #ffffff;
+  }
+
+  mat-card-content table tbody td {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+  }
+
+  mat-card-content table tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #2d3748;
+  }
+}
