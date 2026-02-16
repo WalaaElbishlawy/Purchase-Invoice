@@ -1,59 +1,41 @@
-# PurchaseInvoiceApp
+# Purchase Invoice 
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.1.
+## Description
+This is an **Angular project using standalone components** for creating purchase invoices.  
+Users can select suppliers, add items dynamically, calculate totals, and view a receipt — all without relying on traditional Angular modules.
 
-## Development server
+---
 
-To start a local development server, run:
+## Features
+- Add multiple items to an invoice dynamically
+- Automatic calculation of line totals and grand total
+- Supplier selection from a dropdown
+- Notes field for additional information
+- View a printable receipt after submission
+- Responsive design using Angular Material
+- Built entirely with **standalone Angular components**
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Technologies Used
+- Angular 17+
+- Standalone Components
+- Angular Material
+- Reactive Forms
+- TypeScript
+- HTML & CSS
+- Bootstrap
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Setup Instructions
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+1. **Clone the repository:**
 
 ```bash
-ng test
-```
+git clone https://github.com/WalaaElbishlawy/Purchase-Invoice.git
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+2. **Navigate to project folder:**
 
 ```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+cd PurchaseInvoice-app
