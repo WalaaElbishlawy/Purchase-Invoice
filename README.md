@@ -39,5 +39,45 @@ git clone https://github.com/WalaaElbishlawy/Purchase-Invoice.git
 
 2. **Navigate to project folder:**
 
-```bash
 cd PurchaseInvoice-app
+
+---
+
+3. **Navigate to the project folder:**
+
+cd PurchaseInvoice-app
+
+---
+
+4. **Install dependencies:**
+
+npm install
+
+---
+
+5. **Run the project:**
+
+ng serve
+
+---
+
+6. **Open in browser:**
+
+http://localhost:4200
+
+---
+
+## Project Structure
+
+PurchaseInvoice-app/
+│
+├── src/
+│   ├── app/
+│   │   ├── core/          # Services and models
+│   │   ├── features/      # Standalone components like PurchaseInvoice
+│   │   └── main.ts        
+│   └── index.html
+│
+├── angular.json
+├── package.json
+└── README.md
