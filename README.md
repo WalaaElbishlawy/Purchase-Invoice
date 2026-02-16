@@ -35,6 +35,8 @@ Users can select suppliers, add items dynamically, calculate totals, and view a 
 ```bash
 git clone https://github.com/WalaaElbishlawy/Purchase-Invoice.git
 
+---
+
 2. **Navigate to project folder:**
 
 ```bash
